@@ -1,69 +1,60 @@
-# React + TypeScript + Vite
+# 🚀 TO_DO_REACT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and animated To-Do web app built with **React**, **Vite**, and **CSS**.
 
-Currently, two official plugins are available:
+This project allows users to manage tasks with a clean and minimal interface.  
+It features subtle animations, a background image overlay, and responsive layout — all styled with vanilla CSS.  
+Perfect for practicing React fundamentals, CSS tricks, and responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📦 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React (with JSX/TSX)
+- Vite (fast bundler)
+- Plain CSS for styling
+- CSS3 animations
+- Media queries for responsive design
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+src/
+├── assets/
+├── components/
+├── CSS/
+├── App.tsx
+├── main.tsx
+├── todo.ts
+├── TodoService.ts
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💡 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Add and manage tasks
+- Centered layout with Flexbox
+- Background image with black transparent gradient
+- Bounce animation using CSS `@keyframes`
+- Responsive styles using media queries
+- Custom input & button styling
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📸 Screenshot
+
+![App Screenshot](./src/assets/Screenshot_20250801_094032.png)
+![App Screenshot](./src/assets/Screenshot_20250801_093932.png)
+
+# Clone the repository
+
+git clone https://github.com/Kalx6/TO_DO_REACT.git
+
+# Navigate into the project folder
+
+cd TO_DO_REACT
+
+# Install dependencies
+
+npm install
+
+# Run the dev server
+
+npm run dev
