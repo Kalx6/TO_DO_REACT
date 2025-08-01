@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(45deg,  black,rgb(253, 168, 111,0.7),rgb(2, 39, 76,1)),  
+       url(../assets/pexels-lulizler-3165335.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    background:linear-gradient(rgba(0, 0, 0, 0.5)
+    ),  url(../assets/pexels-lulizler-3165335.jpg) ;
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+    
+}
+.logoSide {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+    color: antiquewhite;
+    font-family: 'poppins',Arial,sans-serif;
+    margin-top: 10px;
+}
+@keyframes bounce {
+    0%,100% {
+        transform:translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.bounce {
+    animation: bounce 2s ease infinite;
+}
+
+@media(max-width:500px) {
+
+    .App {
+        width: 350px;
+        max-height: 100%;
+        border-radius: 8px;
+    }
+    .logoSide {
+        font-size: 14px;
+    }
+}
+@media(max-width:400px) {
+
+    .App {
+        width: 300px;
+        max-height: 100%;
+        border-radius: 8px;
+    }
+    .logoSide {
+        font-size: 14px;
+    }
+}

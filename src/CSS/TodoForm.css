@@ -1,0 +1,57 @@
+.inputForm {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.inputBox {
+    font-family:'poppins',Arial,sans-serif;
+    width: 360px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgba(243, 232, 253, 0.986);
+    color: rgb(115, 114, 114);
+    border: none;
+    border-radius: 7px 0 0 7px;
+    padding-left: 10px;
+}
+.inputBox:focus {
+    outline:none;
+    box-shadow: none;
+
+}
+.inputBtn {
+    font-family:'poppins',Arial,sans-serif;
+    padding: 0;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    background-color: rgb(78, 0, 131);
+    font-size: 18px;
+    font-weight: 550;
+    color: antiquewhite;
+    border-radius: 0 7px 7px 0;
+    text-align: center;
+
+}
+.inputBtn:active {
+    color:rgb(78, 0, 131) ;
+    background-color: antiquewhite;
+}
+@media(max-width:500px) {
+    .inputBox {
+        width: 210px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+
+}
+@media(max-width:400px) {
+    .inputBox {
+        width: 140px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+
+}
