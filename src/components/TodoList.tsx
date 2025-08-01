@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TodoTypes from "../todo";
 import TodoService from "../TodoService";
 import { FaEdit, FaCheck } from "react-icons/fa";
